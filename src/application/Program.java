@@ -1,10 +1,11 @@
 package application;
 
-import boardgame.Position;
+import chess.ChessMatch;
 
 public class Program {
     public static void main(String[] args) {
-        Position ps = new Position(3, 5);
-        System.out.println(ps);
+        ChessMatch chessMatch = new ChessMatch();
+        //printa o tabuleiro de xadrez na tela
+        UI.printBoard(chessMatch.getPieces());
     }
 }
